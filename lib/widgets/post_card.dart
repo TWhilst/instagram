@@ -97,6 +97,8 @@ class _PostCardState extends State<PostCard> {
             onDoubleTap: () async {
               setState(() {
                 isLikeAnimating = true;
+
+
               });
               await FirestoreMethods().likePost(
                 user.uid,
